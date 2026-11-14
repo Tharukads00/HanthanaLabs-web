@@ -8,7 +8,7 @@ import CompanyPage from './pages/CompanyPage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Box
         sx={{
           backgroundColor: 'background.default',
