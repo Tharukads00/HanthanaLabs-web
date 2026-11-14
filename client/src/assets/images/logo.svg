@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 60" fill="none">
+  <!-- Minimalist Geometric Precision Mark -->
+  <g transform="translate(6, 10)">
+    <polygon points="20,2 38,12 38,32 20,42 2,32 2,12" stroke="#1d1d1f" stroke-width="1.8" fill="none"/>
+    <path d="M13,16 L13,28 M27,16 L27,28 M13,22 L27,22" stroke="#1d1d1f" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+  <!-- Text Wordmark -->
+  <text x="56" y="34" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-weight="700" font-size="20" letter-spacing="-0.02em" fill="#1d1d1f">
+    HanthanaLabs
+  </text>
+  <text x="57" y="47" font-family="'JetBrains Mono', monospace" font-weight="500" font-size="8" letter-spacing="0.12em" fill="#86868b" text-transform="uppercase">
+    Mechatronics &amp; Electronics R&amp;D
+  </text>
+</svg>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HanthanaLabs — Mechatronics & Electronics Research & Development. Clean engineering, foldable solar arrays, autonomous drones, and custom industrial systems." />
+    
+    <!-- Modern Web Standard Color Scheme Declaration -->
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#ffffff" id="theme-color-meta" />
+
+    <!-- FOUC Prevention Script (applies saved theme before first paint) -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('hanthana-theme');
+          var systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var theme = (saved === 'dark' || saved === 'light') ? saved : (systemDark ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+          var metaColorScheme = document.querySelector('meta[name="color-scheme"]');
+          if (metaColorScheme) {
+            metaColorScheme.content = (saved === 'dark' || saved === 'light') ? saved : 'light dark';
+          }
+          var metaThemeColor = document.getElementById('theme-color-meta');
+          if (metaThemeColor) {
+            metaThemeColor.content = theme === 'dark' ? '#0a0a0c' : '#ffffff';
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts: Plus Jakarta Sans, Inter, JetBrains Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <title>HanthanaLabs — Mechatronics & Electronics R&D</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

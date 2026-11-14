@@ -1,0 +1,25 @@
+{
+  "name": "hanthanalabs",
+  "version": "1.0.0",
+  "description": "HanthanaLabs - Mechatronics & Electronics R&D",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "dev:client": "npm --prefix client run dev",
+    "dev:server": "npm --prefix server start",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server start",
+    "install:all": "npm install && npm --prefix client install && npm --prefix server install"
+  },
+  "keywords": [
+    "mechatronics",
+    "electronics",
+    "solar",
+    "drones",
+    "r&d"
+  ],
+  "author": "HanthanaLabs",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.7"
+  }
+}

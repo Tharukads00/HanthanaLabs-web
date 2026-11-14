@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="380" viewBox="0 0 600 380" fill="none">
+  <rect width="600" height="380" fill="#121216"/>
+  
+  <!-- Subtle technical grid -->
+  <defs>
+    <pattern id="cadGridDark" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="380" fill="url(#cadGridDark)"/>
+  
+  <!-- Outer schematic border -->
+  <rect x="20" y="20" width="560" height="340" rx="8" stroke="rgba(255,255,255,0.12)" stroke-width="1" fill="none"/>
+  
+  <!-- Technical title block -->
+  <text x="35" y="45" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8" letter-spacing="1">DWG: HL-PV-2026 // FOLDABLE SOLAR ARRAY ASSEMBLY</text>
+  <text x="565" y="45" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="9" fill="#64748b">SCALE 1:5 // REV 03</text>
+  
+  <!-- Foldable Solar Panel Modules (Tri-fold kinematic architecture) -->
+  <g transform="translate(80, 80)">
+    <!-- Panel 1 (Left Wing) -->
+    <rect x="0" y="20" width="130" height="180" rx="6" stroke="#f5f5f7" stroke-width="1.5" fill="#181820"/>
+    <!-- Solar Cells on Panel 1 -->
+    <line x1="0" y1="65" x2="130" y2="65" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <line x1="0" y1="110" x2="130" y2="110" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <line x1="0" y1="155" x2="130" y2="155" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <line x1="43" y1="20" x2="43" y2="200" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <line x1="86" y1="20" x2="86" y2="200" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+
+    <!-- Dual Hinge 1 -->
+    <rect x="130" y="50" width="10" height="30" rx="3" stroke="#94a3b8" stroke-width="1.2" fill="#24242e"/>
+    <rect x="130" y="140" width="10" height="30" rx="3" stroke="#94a3b8" stroke-width="1.2" fill="#24242e"/>
+    <circle cx="135" cy="65" r="2" fill="#2997ff"/>
+    <circle cx="135" cy="155" r="2" fill="#2997ff"/>
+
+    <!-- Panel 2 (Center Base with MPPT Electronics) -->
+    <rect x="140" y="15" width="160" height="190" rx="6" stroke="#f5f5f7" stroke-width="2" fill="#181820"/>
+    <!-- Cells on Center Panel -->
+    <line x1="140" y1="62" x2="300" y2="62" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <line x1="140" y1="109" x2="300" y2="109" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <line x1="140" y1="156" x2="300" y2="156" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <line x1="193" y1="15" x2="193" y2="205" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <line x1="246" y1="15" x2="246" y2="205" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+    <!-- MPPT & Controller Housing on Rear -->
+    <rect x="175" y="210" width="90" height="26" rx="4" stroke="#2997ff" stroke-width="1.2" fill="#162234"/>
+    <text x="220" y="227" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#2997ff">SMART MPPT BUS</text>
+
+    <!-- Dual Hinge 2 -->
+    <rect x="300" y="50" width="10" height="30" rx="3" stroke="#94a3b8" stroke-width="1.2" fill="#24242e"/>
+    <rect x="300" y="140" width="10" height="30" rx="3" stroke="#94a3b8" stroke-width="1.2" fill="#24242e"/>
+    <circle cx="305" cy="65" r="2" fill="#2997ff"/>
+    <circle cx="305" cy="155" r="2" fill="#2997ff"/>
+
+    <!-- Panel 3 (Right Wing) -->
+    <rect x="310" y="20" width="130" height="180" rx="6" stroke="#f5f5f7" stroke-width="1.5" fill="#181820"/>
+    <!-- Cells on Panel 3 -->
+    <line x1="310" y1="65" x2="440" y2="65" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <line x1="310" y1="110" x2="440" y2="110" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <line x1="310" y1="155" x2="440" y2="155" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <line x1="353" y1="20" x2="353" y2="200" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <line x1="396" y1="20" x2="396" y2="200" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+  </g>
+
+  <!-- Technical dimension lines -->
+  <line x1="80" y1="310" x2="520" y2="310" stroke="#64748b" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="80" y1="305" x2="80" y2="315" stroke="#f5f5f7" stroke-width="1.5"/>
+  <line x1="520" y1="305" x2="520" y2="315" stroke="#f5f5f7" stroke-width="1.5"/>
+  <text x="300" y="325" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#f5f5f7">DEPLOYED APERTURE: 1,180 mm // COMPACT FOLDED: 320 mm</text>
+  
+  <text x="35" y="345" font-family="'JetBrains Mono', monospace" font-size="8" fill="#94a3b8">VERIFIED: WEATHER SEALING &amp; HIGH-IRRADIANCE TROPICAL SOLAR EFFICIENCY</text>
+</svg>
