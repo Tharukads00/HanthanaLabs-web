@@ -20,6 +20,7 @@
   "author": "HanthanaLabs",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^10.0.7"
+    "concurrently": "^10.0.7",
+    "webpack-cli": "^7.3.1"
   }
 }
