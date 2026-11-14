@@ -40,6 +40,8 @@ jobs:
       - name: Build React Landing Page
         run: |
           npm --prefix client run build
+        env:
+          VITE_BASE_PATH: '/HanthanaLabs-web/'
 
       - name: Create 404 SPA Fallback
         run: |

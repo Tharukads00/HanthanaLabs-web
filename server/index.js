@@ -36,12 +36,17 @@ app.use('/api/contact', contactRoutes);
 
 // Static client files (for production build)
 const clientDistPath = path.resolve(__dirname, '../client/dist');
+app.use('/HanthanaLabs-web', express.static(clientDistPath));
 app.use(express.static(clientDistPath));
 
 // Fallback for SPA
 app.get('*', (req, res, next) => {
   if (req.path.startsWith('/api')) {
     return next();
+  }
+  // Prevent returning index.html with 200 for missing static assets (which breaks module script execution)
+  if (/\.(js|css|svg|png|jpg|jpeg|gif|webp|ico|woff|woff2|ttf|eot)$/i.test(req.path)) {
+    return res.status(404).send('Asset not found');
   }
   res.sendFile(path.join(clientDistPath, 'index.html'), (err) => {
     if (err) {
