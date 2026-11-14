@@ -38,8 +38,8 @@ Redesigned with world-class product page aesthetics — completely eliminating b
 - **Founders Profiles & Executive Notes**:
   - **Tharuka De Silva** (*CEO*) — *Letter from the CEO: "The Imperative of Physical Innovation"* (On prioritizing real physical hardware engineering over software hype).
   - **Kevin Dawson** (*President*) — *Letter from the President: "The Discipline of Execution"* (On tolerance stack-ups, repeatable fabrication, and environmental stress screening).
-  - **Lahiru Herath** (*VP Mechatronics*) — *Letter from VP Mechatronics: "Confronting Aerodynamic Realities"* (On structural vibration isolation, latency in motor response, and modular drone payloads).
-  - **Chathuni** (*VP Energy & Electronics*) — *Letter from VP Energy: "Decentralized Energy, Anywhere on Earth"* (On origami-engineered solar portability, MPPT conversion, and battery thermal management).
+  - **Lahiru Herath** (*VP Head of the Electronics*) — *Letter from VP Mechatronics: "Confronting Aerodynamic Realities"* (On structural vibration isolation, latency in motor response, and modular drone payloads).
+  - **Chathuni Fernando** (*VP Head of the Energy & Mechatronics*) — *Letter from VP Energy: "Decentralized Energy, Anywhere on Earth"* (On origami-engineered solar portability, MPPT conversion, and battery thermal management).
 - **Company Terms & Operating Policies (`#policies`)**:
   - *R&D Engagement Terms*: SOW agreements, milestone acceptance, prototype operational envelope, and liability boundaries.
   - *Client Intellectual Property (IP)*: 100% assignment of custom Foreground IP to clients upon completion, clear Background IP licensing, and binding mutual NDA standard.
